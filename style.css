@@ -263,11 +263,6 @@ color: white;
     color: #2e3a44;
 }
 
-.home-bottom {
-    width: 95%;
-    padding: 80px 0;
-    background-color: #f8f8f8;
-}
 .grd {
     width: 95%;
     text-align: center;
@@ -277,7 +272,7 @@ color: white;
     background-color: #f8f8f8;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 10px;
     text-align: center;
     align-items: stretch;
     padding: 0;
@@ -384,12 +379,15 @@ color: white;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    text-align: left;
     align-items: center;
+    width: 95%;
+    margin: 20px 0;
 }
 .bottom-center1{
     margin-left: 20px;
+    text-align: left;
 }
 .getaway{
   font-family: 'Poppins', sans-serif;
@@ -433,9 +431,9 @@ color: white;
     display: flex;
      flex-direction: row;
      gap: 10px;
-     justify-content: center;
+     justify-content: flex-start;
      align-items: center;
-     text-align: center;
+     text-align: left;
 
 }
 
@@ -914,7 +912,7 @@ span{
 -------------------------*/
 .gallery{
   width: 95%;
-  height: auto;
+  height: 400px;
   margin: 10px 50px 50px 0 ;
   background:#dff4d1;          /* vert pastel */
   padding:4rem 1rem;
@@ -924,9 +922,9 @@ span{
 
 .wrapper{
   max-width:1200px;
+  height: 500px;
   margin:0 auto;
   text-align:center;
-  position:relative;
 }
 
 /* Titre + icône diamant */
@@ -939,9 +937,8 @@ span{
   justify-content: center;
   align-items:center;
   gap:.4rem;
-  margin-bottom:2.5rem;
   position: relative;
-  top: -40px;
+  top: -50px;
 }
 
 .section-title .icon{
@@ -955,9 +952,12 @@ span{
 
 /* ---------- Bouton CTB ---------- */
 .btn-ctb{
-  display:flex;
+  /* height: 40px; */
   width: fit-content;
-  /* justify-content: center; */
+  display:flex;
+  gap: 5px;
+  text-align: center;
+  justify-content: center;
   align-items: center;
   background:#dff4d1;
   color:#000;
@@ -968,10 +968,13 @@ span{
   font-weight:600;
   letter-spacing:.5px;
   text-decoration:none;
+  padding: 0.4rem;
+  /* transition:.3s; */
+  text-align: left;
   position: relative;
-  left: 0;
+  right: -200px;
   /* margin-left: 280px; */
-  top: 0;
+  top: -25px;
   /* margin-top: 15px; */
 }
 
@@ -989,7 +992,7 @@ span{
     padding-top: 5px;
 }
 
-.fab {
+.ir i {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -1003,7 +1006,7 @@ span{
 .btn-ctb, .har {
     text-decoration:none;
     color:#000;
-    padding: 0.5rem;   
+    /* padding: 0.5rem;    */
 }
 
 /* ---------- grille images ---------- */
@@ -1018,6 +1021,8 @@ span{
   justify-items:center;
   align-items:center;
   margin-bottom:2.5rem;
+  position: relative;
+  top: -100px;
 }
 
 /* règle commune à toutes les vignettes */
@@ -1030,28 +1035,28 @@ span{
 }
 
 /* tailles + placement individuel */
-.img--top   {grid-area:top;    width:150px; position: absolute; right: 0; margin-right: 355px; top: 0; margin-top: 25px;}
-.img--left  {grid-area:left;   width:190px; position: absolute; top: 0; margin-top: 235px; margin-right: 460px;}
+.img--top   {grid-area:top;    width:150px; position: relative; left: 175px; top: 40px;}
+.img--left  {grid-area:left;   width:190px; position: relative; top: 90px; margin-top: px; left: 175px; margin-right: px;}
 .img--center{grid-area:center; width:350px;}
-.img--right {grid-area:right;  width:210px; position: absolute; top: 0; margin-top: 260px; margin-left: 379px;}
-.img--bottom{grid-area:bottom; width:150px;}
-.para {grid-area: right; margin-right: 350px; font-size: 5px; text-align: left;}
-.pi {grid-area: bottom; padding-bottom: 100px; padding-top: 30px; font-size: 10px; margin-right: 50px;}
+.img--right {grid-area:right;  width:200px; position: relative; top: 130px; margin-top: px; left: -200px; margin-left: px;}
+.img--bottom{grid-area: bottom; width:150px;}
+.para {grid-area: right; position: relative; left: -40%; font-size: 12px; text-align: left;}
+.pi {grid-area: bottom; position: relative; bottom: -10px; font-size: 10px;}
 
 /* ---------- Bouton CTA ---------- */
 .btn-cta{
-  display:inline-block;
-  background:#dff4d1;
-  color:#000;
-  padding:.5rem 1.8rem;
-  border-radius:30px;
-  border:2px solid #000;
-  font-size:.5rem;
-  font-weight:600;
-  letter-spacing:.5px;
-  text-decoration:none;
-  transition:.3s;
-  margin-right: 40px;
+    display:inline-block;
+    background:#dff4d1;
+    color:#000;
+    padding:.5rem 1.8rem;
+    border-radius:30px;
+    border:2px solid #000;
+    font-size:.5rem;
+    font-weight:600;
+    letter-spacing:.5px;
+    text-decoration:none;
+    position: relative;
+    top: -50px;
 }
 .btn-cta:hover{
   background:#000;
@@ -1087,7 +1092,7 @@ span{
     text-decoration: none;
 }
 .box {
-    margin: 50px;
+    margin: 25px;
 width: 150px;
 border-radius: 20px;
 justify-self: center;
@@ -1119,7 +1124,7 @@ padding: 2px 7px;
 .container{
     width: 95%;
     height: auto;
-    margin: 10px 50px 50px 0 ;
+    margin: 10px 50px 0 0 ;
 }
 .separator{
     height: 3px;
@@ -1163,4 +1168,7 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.footer-icons{
+    /* margin-right: 20px; */
 }
