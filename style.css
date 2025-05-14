@@ -1,12 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
 
 *{
     margin: 0;
     padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 
 html, body {
     margin: 0;
@@ -19,7 +19,7 @@ html, body {
     padding: 0;
     height: 800px;
     border-radius: 15px;
-    width: 1550px;
+    width: 95%;
     background-image: url(./images/banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -1172,7 +1172,4 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-.footer-icons{
-    /* margin-right: 20px; */
 }
