@@ -372,13 +372,12 @@ color: white;
 
 
 .bottom-last {
+    margin: 40px 0;
     display: flex;
     gap: 600px;
     /* justify-content: space-between; */
-     width: 100%;
-   /*
- 
-  padding: 20px; */
+     width: 95%;
+   /*padding: 20px; */
 }
 
 .img-foot{
@@ -783,7 +782,7 @@ body {
     cursor: pointer;
     color: white;
     border: none;
-
+    height: fit-content;
     letter-spacing: 5px;
     position: relative;
     top: -10px;
@@ -1091,6 +1090,7 @@ span{
     text-decoration: none;
 }
 .box {
+    margin: 50px;
 width: 150px;
 border-radius: 20px;
 justify-self: center;
@@ -1129,10 +1129,10 @@ padding: 2px 7px;
     width: 95%;
     background-color: gray;
     opacity: 0.7;
-    margin: 5px 0;
+    /* margin: 5px 0;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 30px;
+    margin-top: 30px; */
 }
 
 footer{
