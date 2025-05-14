@@ -858,6 +858,11 @@ body {
     align-items: end; 
 }
 
+.number{
+    color: grey;
+    font-weight: 300px;
+}
+
 
 
 .learn-more{
